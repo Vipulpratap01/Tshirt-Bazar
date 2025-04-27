@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - PUMA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      background-color: white;
+      width: 800px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .left {
+      width: 50%;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .left img {
+      width: 90%;
+      max-height: 100%;
+    }
+
+    .right {
+      width: 50%;
+      padding: 40px;
+    }
+
+    .right h2 {
+      margin-bottom: 10px;
+    }
+
+    .right p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .options a {
+      color: orange;
+      text-decoration: none;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 10px;
+      background-color: orange;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .register {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .register a {
+      color: orange;
+      text-decoration: none;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Left side with image -->
+    <div class="left">
+       <!-- Normal image -->
+  <img src="./iron-man-arc-reactor-drop-cut-t-shirt-india-525x700_-_Copy-removebg-preview.png" alt="tshirt" width="90">
+
+   </div>
+
+    <!-- Right side with login form -->
+    <div class="right">
+      <h2>Welcome Back!</h2>
+      <p>Log in now to explore all the features and benefits of our platform and see what’s new.</p>
+
+      <div class="form-group">
+        <input type="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="Enter your Password" required>
+      </div>
+
+      <div class="options">
+        <label><input type="checkbox"> Remember my account</label>
+        <a href="#">Forgot Password?</a>
+      </div>
+
+      <button class="login-btn">Login</button>
+
+      <div class="register">
+        Don’t have an account? <a href="#">Register Now ›››</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

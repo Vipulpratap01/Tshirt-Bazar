@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Julia | Earrings Collection</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #d4c8b8;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+   
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .logo img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 40px;
+      position: relative;
+    }
+
+    .hero-text {
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      font-weight: 300;
+      line-height: 1.1;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .shop-btn {
+      margin-top: 25px;
+      padding: 12px 28px;
+      border: 1px solid #fff;
+      background-color: transparent;
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .hero-image {
+      margin-right: 20px;
+    }
+
+    .hero-image img {
+      width: 320px;
+      border-radius: 4px;
+    }
+    .image-container {
+  position:absolute;
+  align-items: center;
+  justify-content: center;
+  width: 700px; /* Set your preferred size */
+  height: 400px;
+  overflow: hidden;
+}
+
+.image {
+  transition: transform 0.3s ease;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: fade 6s infinite;
+}
+.image :hover {
+    transform: scale(1.1);
+  }
+.img2 {
+  animation-delay: 3s;
+}
+
+@keyframes fade {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+ 
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./batman-super-suit-t-shirt-india-600x800-removebg-preview.png" alt="Logo">
+      <strong>TSHIRT-BAZAR</strong>
+    </div>
+    <nav>
+      <a href="./home.html">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Gallery</a>
+      <a href="#">Your Cart</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact </a>
+      <a href="./login.html">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>New <em>Super Heroes<br> T-Shirt</em> Collection</h1>
+      <p>
+        Step up your style game with our limited edition T-shirt – where bold design meets next-level comfort.<br>
+        Designed to fit right, feel right, and look even better.
+      </p>
+      <button class="shop-btn">SHOP NOW</button>
+      <!-- <img src="./black-panther-suit-drop-cut-t-shirt-india-525x700.webp" class="spin"> -->
+    </div>
+    <div class="hero-image">
+      <div class="flex-container">
+      <div class="image-container">
+        <img src="./batman-super-suit-t-shirt-india-600x800-removebg-preview.png" class=" image img1" />
+        <img src="./iron-man-arc-reactor-drop-cut-t-shirt-india-525x700_-_Copy-removebg-preview.png" class="image img2" />
+      </div>
+     </div>
+    </div>
+  </section>
+
+  <footer>
+    Most Wanted, Most Loved. Now It's Your Time To Get It .....
+  </footer>
+</body>
+</html>
