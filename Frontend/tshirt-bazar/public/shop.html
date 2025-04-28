@@ -1,109 +1,248 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title> Best Tshirt for You /tSHIRT-BAZAR </title>
+  <title>Shop /TSHIRT-BAZAR</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-    }
-    .top-bar {
-      background-color: #3e3a75;
-      color: white;
-      text-align: center;
-      padding: 8px 0;
-      font-size: 14px;
+      font-family: Arial, sans-serif;
     }
     .navbar {
+      background-color: #ffffff;
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      align-items: center;
-      padding: 15px 50px;
-      background-color: white;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .navbar a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-    }
-    .shop-button {
-      background-color: #3e3a75;
-      color: white;
       padding: 10px 20px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .hero {
+    .navbar .logo {
       display: flex;
       align-items: center;
-      justify-content: space-around;
-      padding: 50px;
-      background-color: #c6dad6;
+      gap: 10px;
     }
-    .hero-text {
-      max-width: 500px;
+    .navbar .logo img {
+      width: 40px;
+      height: 40px;
     }
-    .hero-text h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
+    .search-bar input {
+      padding: 8px 12px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
     }
-    .hero-text p {
-      font-size: 18px;
-      margin-bottom: 20px;
+    .user-menu {
+      display: flex;
+      align-items: center;
+      gap: 20px;
     }
-    .hero img {
-      width: 400px;
-      border-radius: 10px;
+    .user-menu span {
+      font-weight: bold;
     }
-    .brands {
-      background-color: #3e3a75;
-      color: white;
+    .user-menu a {
+      text-decoration: none;
+      color: #333;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      padding: 0 30px;
+    }
+
+    .product-card {
+      background: #faf9f9;
+      padding: 15px;
       text-align: center;
-      padding: 20px;
-      font-size: 18px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
+    .product-card img {
+      width: 70%;
+      height: 250px;
+      object-fit: cover;
+    }
+/* cart and buy button */
+    .button-cart, .button-buy {
+  padding: 10px 20px;
+  border: 1px solid #a88734;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button-cart {
+  background-color: #f0c14b;
+}
+
+.button-buy {
+  background-color: #ffa41c;
+}
+
+
   </style>
 </head>
 <body>
 
-  <div class="top-bar">
-    Use code NEW20  to save 20% on your first order!
-  </div>
-
   <div class="navbar">
+    <!-- Left side logo -->
     <div class="logo">
-      <h2 style="color: #FFD700;">TSHIRT-BAZAR</h2> <!-- You can replace with an image logo -->
+      <img src="./batman-super-suit-t-shirt-india-600x800-removebg-preview.png" alt="Logo">
+      <strong>TSHIRT-BAZAR</strong>
     </div>
-    <div class="menu">
-      <a href="./home.html">SHOP</a>
-      <a href="#">GALLERY</a>
-      <a href="#">ABOUT US</a>
-      <a href="#">CONTACT</a>
-      <a href="./login.html">LOGIN</a>
-    </div>
-    <a href="./home.html" class="shop-button">SHOP NOW</a>
-  </div>
 
-  <div class="hero">
-    <div class="hero-text">
-      <h1>Everyday Comfort, Endless Possibilities</h1>
-      <p>Unleash your inner Dark Knight with this epic Batman T-shirt.Crafted for heroes — designed for comfort.</p>
-      <p><strong>TSHIRT  starting at $3.36 ONLY</strong></p>
-      <a href="#" class="shop-button">SHOP NOW</a>
+    <!-- Center search bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search your product ...">
     </div>
-    <div class="hero-image">
-      <img src="./batman-super-suit-t-shirt-india-600x800.jpg" alt="BATMAN IS HERE"> <!-- Replace with your own image link -->
+
+    <!-- Right side user info -->
+    <div class="user-menu">
+      <a href="#" style="color: #00bcd4;">Shop</a>
+      <span>login Details</span>
+      <a href="#">Cart</a>
+      <a href="#">Orders</a>
     </div>
   </div>
 
-  <div class="brands">
-    SUPERMAN • BATMAN • BLACK PANTHER • SPIDER MAN • LOKI. • IRONMAN
-  </div>
+<!-- section for product -->
+
+  <section class="products">
+    <div class="product-card">
+      <img src="./iron-man-arc-reactor-drop-cut-t-shirt-india-525x700_-_Copy-removebg-preview.png" alt="TSHIRT ">
+      <p><details>Product Info</details></p>
+      <strong>IRON MAN  DROP CUT TSHIRT</strong>
+      <p style="color: rgb(12, 12, 12);">$120</p>
+      <div style="text-align: center; margin-top: 20px;">
+        <button class="button-cart">🛒 Add to Cart</button>
+        <button class="button-buy">⚡ Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="./dc-superman-vintage-logo-full-sleeve-t-shirt-india-600x800.jpg" alt="SUPERMAN TSHIRT">
+      <p><details>Product Info</details></p>
+      <strong>SUPERMAN  FULL SLEEVE TSHIRT</strong>
+      <p style="color: rgb(12, 12, 12);">$120</p>
+      <div style="text-align: center; margin-top: 20px;">
+        <button class="button-cart">🛒 Add to Cart</button>
+        <button class="button-buy">⚡ Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="./batman-super-suit-t-shirt-india-600x800.jpg" alt="BATMAN TSHIRT">
+      <p><details>Product Info</details></p>
+      <strong>BATMAN SUPER SUIT TSHIRT</strong>
+      <p style="color: rgb(12, 12, 12);">$120</p>
+      <div style="text-align: center; margin-top: 20px;">
+        <button class="button-cart">🛒 Add to Cart</button>
+        <button class="button-buy">⚡ Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="./amazing-spidey-drop-cut-t-shirt-india-525x700.jpg" alt="SPIDEY TSHIRT">
+      <p><details>Product Info</details></p>
+      <strong> AMAZING SPIDEY DROP CUT TSHIRT</strong>
+      <p style="color: rgb(12, 12, 12);">$120</p>
+      <div style="text-align: center; margin-top: 20px;">
+        <button class="button-cart">🛒 Add to Cart</button>
+        <button class="button-buy">⚡ Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+        <img src="./iron-man-arc-reactor-drop-cut-t-shirt-india-525x700_-_Copy-removebg-preview.png" alt="TSHIRT ">
+        <p><details>Product Info</details></p>
+        <strong>IRON MAN DROP CUT TSHIRT</strong>
+        <p style="color: rgb(12, 12, 12);">$120</p>
+        <div style="text-align: center; margin-top: 20px;">
+            <button class="button-cart">🛒 Add to Cart</button>
+            <button class="button-buy">⚡ Buy Now</button>
+          </div>
+      </div>
+      <div class="product-card">
+        <img src="./dc-superman-vintage-logo-full-sleeve-t-shirt-india-600x800.jpg" alt="SUPERMAN TSHIRT">
+        <p><details>Product Info</details></p>
+        <strong>SUPERMAN  FULL SLEEVE TSHIRT</strong>
+        <p style="color: rgb(12, 12, 12);">$120</p>
+        <div style="text-align: center; margin-top: 20px;">
+            <button class="button-cart">🛒 Add to Cart</button>
+            <button class="button-buy">⚡ Buy Now</button>
+          </div>
+      </div>
+      <div class="product-card">
+        <img src="./batman-super-suit-t-shirt-india-600x800.jpg" alt="BATMAN TSHIRT">
+        <p><details>Product Info</details></p>
+        <strong>BATMAN SUPER SUIT TSHIRT</strong>
+        <p style="color: rgb(12, 12, 12);">$120</p>
+        <div style="text-align: center; margin-top: 20px;">
+            <button class="button-cart">🛒 Add to Cart</button>
+            <button class="button-buy">⚡ Buy Now</button>
+          </div>
+      </div>
+      <div class="product-card">
+        <img src="./amazing-spidey-drop-cut-t-shirt-india-525x700.jpg" alt="SPIDEY TSHIRT">
+        <p><details>Product Info</details></p>
+        <strong> AMAZING SPIDEY DROP CUT TSHIRT</strong>
+        <p style="color: rgb(12, 12, 12);">$120</p>
+        <div style="text-align: center; margin-top: 20px;">
+            <button class="button-cart">🛒 Add to Cart</button>
+            <button class="button-buy">⚡ Buy Now</button>
+          </div>
+      </div>
+  </section>
+  <!-- footer section -->
+  <footer style="background-color: #232f3e; color: white; padding: 40px 20px;">
+    <div style="text-align: center; padding-bottom: 20px;">
+      <a href="#" style="color: white; text-decoration: none;">Back to top</a>
+    </div>
+  
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; text-align: left;">
+      <div>
+        <h4>Get to Know Us</h4>
+        <p>AboutTSHIRT BAZAR</p>
+        <p>Careers</p>
+        <p>Press Releases</p>
+        <p>TSHIRT BAZAR Science</p>
+      </div>
+  
+      <div>
+        <h4>Connect with Us</h4>
+        <p>Facebook</p>
+        <p>Twitter</p>
+        <p>Instagram</p>
+      </div>
+  
+      <div>
+        <h4>Make Money with Us</h4>
+        <p>Sell on TSHIRT BAZAR</p>
+        <p>Protect and Build Your Brand</p>
+        <p>Supply to TSHIRT BAZAR</p>
+        <p>Become an Affiliate</p>
+        <p>Fulfilment by TSHIRT BAZAR</p>
+        <p>Advertise Your Products</p>
+      </div>
+  
+      <div>
+        <h4>Let Us Help You</h4>
+        <p>Your Account</p>
+        <p>Returns Centre</p>
+        <p>Recalls and Product Safety Alerts</p>
+        <p>100% Purchase Protection</p>
+        <p>TSHIRT BAZAR App Download</p>
+        <p>Help</p>
+      </div>
+    </div>
+  
+    <div style="text-align: center; margin-top: 30px;">
+      <img src="./batman-super-suit-t-shirt-india-600x800-removebg-preview.png" alt="TSHIRT BAZAR Logo" style="height: 30px;"><br>TSHIRT BAZAR
+      <div style="margin-top: 10px;">
+        <button style="margin: 5px; padding: 5px 10px;">🌐 English</button>
+        <button style="margin: 5px; padding: 5px 10px;">🇮🇳 India</button>
+      </div>
+    </div>
+  </footer>
+  
 
 </body>
 </html>
-
